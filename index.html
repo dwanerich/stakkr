@@ -46,6 +46,20 @@
     </div>
   </div>
 
+  <button class="open-chat-btn" onclick="openChat()">Chat AI</button>
+<div class="chat-popup" id="aiChat">
+  <div class="chat-header">
+    <span>AI Assistant</span>
+    <button onclick="closeChat()">✕</button>
+  </div>
+  <div class="chat-messages" id="chatMsgs"></div>
+  <div class="chat-input">
+    <input id="chatInput" placeholder="Ask me anything..." />
+    <button onclick="sendMsg()">Send</button>
+  </div>
+</div>
+
+
   <script src="script.js"></script>
 </body>
 </html>
