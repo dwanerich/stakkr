@@ -29,3 +29,11 @@ function sendMsg() {
   }, 800);
 }
 
+function openShineModal() {
+  document.getElementById("shineModal").style.display = "flex";
+}
+function closeShineModal() {
+  document.getElementById("shineModal").style.display = "none";
+}
+
+

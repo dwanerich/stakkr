@@ -27,12 +27,12 @@
     <div class="card" id="code">
       <img src="assets/shine_mode_card.png" alt="SHINE MODE">
       <h3>CODE</h3>
-      <button onclick="openLink('https://github.com')">VIEW GITHUB PROJECTS</button>
+      <button onclick="openShineModal()">ENTER SHINE MODE</button>
     </div>
     <div class="card" id="sound">
       <img src="assets/sound_card.png" alt="SOUND">
       <h3>SOUND</h3>
-      <button onclick="openLink('https://soundcloud.com')">LISTEN TO CHOPP+BOP</button>
+      <button onclick="openLink('https://soundcloud.com')">LISTEN TO CHOP+BOP</button>
     </div>
     <div class="card" id="impact">
       <img src="assets/impact_card.png" alt="IMPACT">
@@ -45,6 +45,16 @@
       <button onclick="openLink('mailto:contact@dwanerich.com')">CONTACT</button>
     </div>
   </div>
+
+  <div id="shineModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeShineModal()">&times;</span>
+    <h2>WELCOME TO SHINE MODE</h2>
+    <img src="assets/impact_modal.gif" alt="Shine Mode Intro">
+    <p>This is where the experience begins. Built with AI + Unity.</p>
+  </div>
+</div>
+
 
   <button class="open-chat-btn" onclick="openChat()">Chat AI</button>
 <div class="chat-popup" id="aiChat">

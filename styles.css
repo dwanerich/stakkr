@@ -37,14 +37,9 @@ nav a {
   font-size: 1.1rem;
   color: #bbb;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
+
+/* Replace this section in your original CSS */
 .card {
   background: #1a1a1a;
   border-radius: 12px;
@@ -52,8 +47,24 @@ nav a {
   text-align: center;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
   padding: 20px;
+  transition: 0.3s;
 }
 
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #4af;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 1000px;
+}
 
 .card img {
   width: 100%;
@@ -138,4 +149,46 @@ body::before {
 .chat-input input { flex:1; padding: 8px; background:#121212; border:none; color:#fff; }
 .chat-input button { background:#4af; color:#000; border:none; padding:8px 12px; cursor:pointer; }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #111;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 40px #4af;
+  text-align: center;
+  color: white;
+  animation: fadeIn 0.5s ease;
+  max-width: 600px;
+}
+.modal-content h2 {
+  color: #4af;
+}
+.modal-content img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.close {
+  position: absolute;
+  top: 20px; right: 30px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #ccc;
+}
+.close:hover {
+  color: white;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
 
