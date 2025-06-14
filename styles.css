@@ -192,3 +192,30 @@ body::before {
   to { opacity: 1; transform: scale(1); }
 }
 
+#preloader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: #000;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preloader-content {
+  text-align: center;
+  color: #4af;
+  font-size: 2rem;
+}
+.glow-ring {
+  margin: 20px auto 0;
+  width: 60px; height: 60px;
+  border: 4px solid #4af;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+

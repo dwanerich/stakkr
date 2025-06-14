@@ -36,4 +36,10 @@ function closeShineModal() {
   document.getElementById("shineModal").style.display = "none";
 }
 
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("preloader").style.display = "none";
+  }, 1500); // 1.5s delay
+});
+
 
