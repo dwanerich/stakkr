@@ -7,17 +7,71 @@ body {
 }
 header {
   background: #0f0f0f;
-  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 16px 24px;
 }
 header h1 {
   margin: 0;
-  font-size: 1.2rem;
   letter-spacing: 2px;
   color: white;
+  font-family: 'Courier Prime', monospace;
+  font-size: 2rem;
 }
+
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-links a.active {
+  color: #4af;
+  border-bottom: 2px solid #4af;
+}
+
+/* Mobile Button */
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 24px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
 nav a {
   margin-left: 20px;
   color: white;
@@ -319,6 +373,7 @@ header h1, .site-logo {
   color: white;
   margin: 0;
 }
+
 
 
 
