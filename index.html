@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="ai_assistant_ui.css">
   <script src="ai_assistant_ui.js" defer></script>
   <script src="ai_assistant_typing.js" defer></script>
-
+  <!-- Link styles and script -->
+  <link rel="stylesheet" href="chopbop_embed.css">
+  <script src="chopbop_embed.js" defer></script>
 
 
 
@@ -26,24 +28,28 @@
 </div>
 
   <header>
-    <h1>STAKKR</h1>
-    <nav>
-      <a href="#code">CODE</a>
-      <a href="#sound">SOUND</a>
-      <a href="#impact">IMPACT</a>
-      <a href="#about">ABOUT</a>
-    </nav>
-  </header>
+  <h1>DWANE RICH</h1>
+  <div class="nav-toggle" onclick="toggleNav()">☰</div>
+  <nav class="nav-links" id="navLinks">
+    <a href="#code">CODE</a>
+    <a href="#sound">SOUND</a>
+    <a href="#impact">IMPACT</a>
+    <a href="#about">ABOUT</a>
+  </nav>
+</header>
 
-  <div class="press-strip">
-  <span>As seen on Getty Images • WireImage • Billboard • Brick City Live • Complex • Rolling Stone • BET</span>
-</div>
+  <!-- <div class="press-strip">
+  <span>As seen on Getty Images • WireImage • Okay Player •  • Karat •  • BET</span>
+</div> -->
+<!-- REMIX HERO START -->
+<section class="hero">
+  <h1>BUILD. CODE. SHINE.</h1>
+  <p>One Brick at a Time</p>
+  <button class="cta" onclick="openChopbopModal()">🎧 Tap In</button>
+  <div class="scroll-down">↓</div>
+</section>
+<!-- REMIX HERO END -->
 
-
-  <div class="hero">
-    <!-- <h2>I’M DWANE RICH</h2>
-    <p>Builder, coder, and creative moving One Brick at a Time.</p> -->
-  </div>
 
   <div class="grid">
     <div class="card" id="code">
@@ -54,12 +60,14 @@
     <div class="card" id="sound">
       <img src="assets/sound_card.png" alt="SOUND">
       <h3>SOUND</h3>
-      <button onclick="openLink('https://soundcloud.com')">LISTEN TO CHOP+BOP</button>
+      <!-- <button onclick="openLink('https://soundcloud.com')">LISTEN TO CHOP+BOP</button> -->
+      <button onclick="openChopbopModal()" class="chopbop-button">🎧 Chop + Bop</button>
+
     </div>
     <div class="card" id="impact">
       <img src="assets/impact_card.png" alt="IMPACT">
       <h3>IMPACT</h3>
-      <button onclick="openLink('https://yatpag.org')">SUPPORT 1-BAT/YATPAG</button>
+      <button onclick="openLink('https://y-t-d-c.vercel.app/')">SUPPORT 1-BAT/YATPAG</button>
     </div>
     <div class="card" id="about">
       <img src="assets/about_card.png" alt="ABOUT">
@@ -74,6 +82,17 @@
     <h2>WELCOME TO SHINE MODE</h2>
     <img src="assets/impact_modal.gif" alt="Shine Mode Intro">
     <p>This is where the experience begins. Built with AI + Unity.</p>
+  </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="chopbopModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeChopbopModal()">&times;</span>
+    <h2>CHOP + BOP</h2>
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/YOUR_TRACK_URL&color=%234af&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+    </iframe>
   </div>
 </div>
 

@@ -48,7 +48,7 @@ nav a.active {
   padding-left: 100%;
   animation: ticker 20s linear infinite;
 }
-@keyframes ticker {
+/* @keyframes ticker {
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
-}
+} */

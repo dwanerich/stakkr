@@ -1,0 +1,53 @@
+
+/* Modal Base */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  background-color: #111;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #4af;
+  width: 80%;
+  max-width: 500px;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(74, 255, 255, 0.4);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chopbop-button {
+  background: #4af;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.chopbop-button:hover {
+  background: #2df;
+}
