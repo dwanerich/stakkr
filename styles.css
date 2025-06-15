@@ -219,3 +219,34 @@ body::before {
   to { transform: rotate(360deg); }
 }
 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  #ai-chatbox {
+    width: 90%;
+    right: 5%;
+  }
+}
+
+

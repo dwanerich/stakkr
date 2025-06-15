@@ -1,0 +1,39 @@
+
+/* AI Assistant Bubble */
+#ai-assist-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  background: #4af;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 0 10px #4af;
+}
+
+/* Chatbox modal */
+#ai-chatbox {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background: #111;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  padding: 16px;
+  z-index: 9998;
+}
+#ai-chatbox p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}

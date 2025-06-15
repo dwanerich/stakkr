@@ -1,0 +1,37 @@
+
+/* Cursor dot */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #4af;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  mix-blend-mode: difference;
+  transition: transform 0.1s ease-out;
+}
+
+/* Hidden quote inside card */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+.card .quote {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  color: #888;
+  font-size: 0.75rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s, transform 0.4s;
+}
+.card:hover .quote {
+  opacity: 1;
+  transform: translateY(0);
+  color: #4af;
+}
