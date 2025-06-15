@@ -246,6 +246,7 @@ body::before {
   #ai-chatbox {
     width: 90%;
     right: 5%;
+    font-style: courier;
   }
 }
 
